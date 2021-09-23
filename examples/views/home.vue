@@ -9,8 +9,13 @@ export default {
   name: "home",
   data() {
     return {
-      content: '<p>1111</p><p>222222</p><p>33333</p><p>444444</p><p>555</p>'
+      content: ''
     };
+  },
+  mounted() {
+    setTimeout(()=>{
+      this.content = '<p>1111111111111111111</p><p>1111111111111111111</p><p>1111111111111111111</p>';
+    },200)
   }
 };
 </script>

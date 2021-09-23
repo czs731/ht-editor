@@ -74,8 +74,14 @@ export default {
     }
   },
   watch: {
-    content(newValue) {
-      this.$emit("change", newValue);
+    content(newValue,oldValue) {
+      if(!oldValue){
+        this.editor.txt.html(newValue)
+      }else{
+        if(newValue!=oldValue){
+          this.$emit("change", newValue);
+        }
+      }
     }
   },
   methods: {
