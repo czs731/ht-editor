@@ -12,7 +12,10 @@
   "keyword": "ht-editor wangeditor",
   "description": "基于wangeditor",
   "author": "czs731",
-  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/czs731/ht-editor.git"
+  },
   "dependencies": {
     "axios": "^0.21.4",
     "core-js": "^3.6.5",
