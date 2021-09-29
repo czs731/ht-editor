@@ -1,12 +1,13 @@
 {
   "name": "ht-editor",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "lib": "vue-cli-service build --target lib --name ht-editor --dest lib packages/index.js"
+    "lib": "vue-cli-service build --target lib --name ht-editor --dest lib packages/index.js",
+    "lib-update": "vue-cli-service build --target lib --name ht-editor --dest lib packages/index.js && npm publish"
   },
   "main": "lib/ht-editor.umd.min.js",
   "keyword": "ht-editor wangeditor",
